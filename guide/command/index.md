@@ -97,8 +97,8 @@ ctx.command('my-command')
 
 ```ts
 ctx.command('my-command')
-  .option('alpha', '-a', { fallback: 100 })
-  .option('beta', '-b', { fallback: 100 })
+  .option('alpha', '-a [alpha]', { fallback: 100 })
+  .option('beta','-b [beta]', { fallback: 100 })
   .action(({ options }) => JSON.stringify(options))
 ```
 
